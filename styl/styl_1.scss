@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+width: 100%;
+height: 100vh;
+}
+
+#napdpis{
+display: flex;
+flex-direction: column;
+margin-top: 50px;
+}
+
+.pisma {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__subtitle {
+        color: var(--primary-text-color, #23a6f0);
+        text-align: center;
+        /* h6 */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.2px;
+    }
+
+    &__title {
+        color: var(--text-color, #252b42);
+        text-align: center;
+        /* h2 */
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px; /* 125% */
+        letter-spacing: 0.2px;
+    }
+
+    &__text {
+        color: var(--second-text-color, #737373);
+        text-align: center;
+        /* paragraph */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.2px;
+    }
+}
+
+.containers {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px;
+    
+
+    &__container {
+        gap: 40px;
+        flex-direction: column;
+        display: flex;
+
+        &-icon {
+            display: flex;
+            gap: 20px;
+            transition: .4s;
+            padding: 20px;
+            cursor: pointer;
+            
+            
+            &:hover{
+                transform: scale(1.3);
+                
+                
+            }
+
+            &-texts {
+                display: flex;
+                flex-direction: column;
+                grid-area: 8px;
+
+                &-easy {
+                    color: var(--text-color, #252b42);
+                    /* h3 */
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px; /* 133.333% */
+                    letter-spacing: 0.1px;
+                }
+
+                &-text {
+                    color: var(--second-text-color, #737373);
+
+                    /* paragraph */
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 142.857% */
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+    }
+}
