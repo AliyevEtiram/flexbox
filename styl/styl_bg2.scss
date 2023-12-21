@@ -1,0 +1,125 @@
+@import "./mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+// width: 100%;
+// height: 100vh;
+}
+
+body{
+    width: 100%;
+height: 100vh;
+}
+
+.contend {
+    display: flex;
+    align-items: center;
+justify-content: center;
+gap: 40px;
+
+@include tablet{
+    flex-direction: column;
+    padding: 20px 40px;
+    
+}
+
+    &__infos {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 35px;
+        // width: 40%;
+        @include tablet{
+            margin-left: 37%;
+        }
+
+        &-name {
+            color: var(--text-color, #252b42);
+
+            /* h3 */
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 133.333% */
+            letter-spacing: 0.1px;
+
+            @include tablet{
+                width: 62%;
+            }
+        }
+
+        &-text {
+            color: var(--second-text-color, #737373);
+            width: 33%;
+            /* paragraph */
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: 0.2px;
+            width: 52%;
+        }
+
+        &-btn {
+            display: flex;
+            padding: 15px 40px;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            background: var(--primary-color, #23a6f0);
+            color: var(--light-text-color, #fff);
+            text-align: center;
+
+            /* btn-text */
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px; /* 157.143% */
+            letter-spacing: 0.2px;
+            border: none;
+        }
+    }
+    
+}
+
+.numbs__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+
+    &-cont{
+display: flex;
+flex-direction: column;
+row-gap: 16px;
+
+        &-numb{
+            color: var(--text-color, #252B42);
+
+            /* h2 */
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px; /* 125% */
+            letter-spacing: 0.2px;
+        }
+
+        &-text{
+            color: var(--second-text-color, #737373);
+
+            /* h5 */
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.1px;
+        }
+    }
+}
